@@ -3,10 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>game</title>
-
-	<!-- cc - for CreateJS and ZIMjs http://zimjs.com - free to modify - Dan Zen 2015 -->
-	<!-- see http://zimjs.com/templates for more templates and meta tags -->
+	<title>Self Portrait</title>
 
 	<script>
 		var zon = true; // true for comments from zim code
@@ -56,7 +53,27 @@
 			var imagePath = "images/";
 			var manifest = [{id: "backing", src: "leaves.jpeg"},
 											{id: "eye", src: "eyes.png"},
+											{id: "meandjord", src: "meandjord.JPG"},
+											{id: "momandme", src: "mompic.JPG"},
+											{id: "mesuit", src: "mesuit.jpeg"},
+											{id: "adidasme", src: "adidasme.jpeg"},
+											{id: "bowlcut", src: "bowlcut.jpeg"},
+											{id: "hose", src: "hose.jpeg"},
+											{id: "kitchenjord", src: "kitchenjord.jpeg"},
+											{id: "ahh", src: "ahh.jpeg"},
+											{id: "fishing", src: "fishing.jpeg"},
+											{id: "mechristmas", src: "mechristmas.jpeg"},
+											{id: "mefilm", src: "mefilm.jpg"},
+											{id: "cousin", src: "cousin.jpg"},
+											{id: "garbage", src: "garbage.jpg"},
+											{id: "medan", src: "medan.jpg"},
+											{id: "mecali", src: "mecali.jpg"},
+											{id: "mehat", src: "mehat.jpg"},
+											{id: "family", src: "family.jpg"},
+
+											// {id: "mompic", src: "mompic.JPG"},
 											{id: "background", src: "meandbrain.png"}];
+
 
 
 			var preload = new createjs.LoadQueue(false, imagePath);
@@ -71,15 +88,124 @@
 
 				stage.enableMouseOver(10);
 
-				var newpic = new createjs.Bitmap(preload.getResult("eye"));
-				newpic.x = stageW / 2;
-				newpic.y = stageH / 2;
-				newpic.alpha = .4;
+				var family = new createjs.Bitmap(preload.getResult("family"));
+				family.x = 110;
+				family.y = 100;
+				family.alpha = .8;
+				family.scaleX = 1;
+				family.scaleY = 1;
+
+				var mehat = new createjs.Bitmap(preload.getResult("mehat"));
+				mehat.x = 280;
+				mehat.y = 200;
+				mehat.alpha = .8;
+				mehat.scaleX = 1;
+				mehat.scaleY = 1;
+
+				var mecali = new createjs.Bitmap(preload.getResult("mecali"));
+				mecali.x = 280;
+				mecali.y = 200;
+				mecali.alpha = .8;
+				mecali.scaleX = 1;
+				mecali.scaleY = 1;
+
+				var medan = new createjs.Bitmap(preload.getResult("medan"));
+				medan.x = 280;
+				medan.y = 220;
+				medan.alpha = .8;
+				medan.scaleX = 1;
+				medan.scaleY = 1;
+
+				var garbage = new createjs.Bitmap(preload.getResult("garbage"));
+				garbage.x = 280;
+				garbage.y = 220;
+				garbage.alpha = .8;
+				garbage.scaleX = 1;
+				garbage.scaleY = 1;
+
+				var cousin = new createjs.Bitmap(preload.getResult("cousin"));
+				cousin.x = 190;
+				cousin.y = 200;
+				cousin.alpha = .8;
+				cousin.scaleX = .9;
+				cousin.scaleY = .9;
+
+				var mefilm = new createjs.Bitmap(preload.getResult("mefilm"));
+				mefilm.x = 350;
+				mefilm.y = 200;
+				mefilm.alpha = .8;
+				mefilm.scaleX = 1;
+				mefilm.scaleY = 1;
+
+				var fishing = new createjs.Bitmap(preload.getResult("fishing"));
+				fishing.x = 120;
+				fishing.y = 100;
+				fishing.alpha = .8;
+				fishing.scaleX = .9;
+				fishing.scaleY = .9;
+
+				var mechristmas = new createjs.Bitmap(preload.getResult("mechristmas"));
+				mechristmas.x = 120;
+				mechristmas.y = 100;
+				mechristmas.alpha = .8;
+				mechristmas.scaleX = .75;
+				mechristmas.scaleY = .75;
+
+				var ahh = new createjs.Bitmap(preload.getResult("ahh"));
+				ahh.x = 170;
+				ahh.y = 100;
+				ahh.alpha = .8;
+				ahh.scaleX = .75;
+				ahh.scaleY = .75;
+
+				var hose = new createjs.Bitmap(preload.getResult("hose"));
+				hose.x = 180;
+				hose.y = 100;
+				hose.alpha = .8;
+				hose.scaleX = .8;
+				hose.scaleY = .8;
+
+				var bowlcut = new createjs.Bitmap(preload.getResult("bowlcut"));
+				bowlcut.x = 100;
+				bowlcut.y = 100;
+				bowlcut.alpha = .8;
+				bowlcut.scaleX = .6;
+				bowlcut.scaleY = .6;
 
 				var backgroundpic = new createjs.Bitmap(preload.getResult("background"));
 				backgroundpic.x = 0;
 				backgroundpic.y = 0;
 				stage.addChild(backgroundpic);
+
+				var jordpic = new createjs.Bitmap(preload.getResult("meandjord"));
+				jordpic.x = 100;
+				jordpic.y = 100;
+				jordpic.alpha = .9;
+				jordpic.scaleX = .4;
+				jordpic.scaleY = .4;
+
+				var suitme = new createjs.Bitmap(preload.getResult("mesuit"));
+				suitme.x = 300;
+				suitme.y = 100;
+				suitme.alpha = .9;
+				suitme.scaleX = .6;
+				suitme.scaleY = .6;
+
+				var mompic = new createjs.Bitmap(preload.getResult("momandme"));
+				mompic.x = 100;
+				mompic.y = 100;
+				mompic.alpha = .9;
+				mompic.scaleX = .4;
+				mompic.scaleY = .4;
+
+				var kitchenjord = new createjs.Bitmap(preload.getResult("kitchenjord"));
+				kitchenjord.x = 160;
+				kitchenjord.y = 100;
+				kitchenjord.alpha = .9;
+				kitchenjord.scaleX = .8;
+				kitchenjord.scaleY = .8;
+
+
 
 				// var backing = new createjs.Bitmap(preload.getResult("backing"));
 				// stage.addChildAt(backing, 0);
@@ -101,17 +227,45 @@
 				createjs.Ticker.framerate = 60;
 				var tween = createjs.Tween.get(tomato);
 
+
+				var textonorange = new createjs.Text("ON", "20px Arial", "tomato");
+ 				textonorange.x = 90;
+				textonorange.y = 710;
+ 				textonorange.textBaseline = "alphabetic";
+
+				var textofforange = new createjs.Text("OFF", "20px Arial", "tomato");
+				textofforange.x = 90;
+				textofforange.y = 660;
+				textofforange.textBaseline = "alphabetic";
+
+
+				var textonblue = new createjs.Text("ON", "20px Arial", "blue");
+ 				textonblue.x = 90;
+				textonblue.y = 560;
+ 				textonblue.textBaseline = "alphabetic";
+
+				var textoffblue = new createjs.Text("OFF", "20px Arial", "blue");
+				textoffblue.x = 90;
+				textoffblue.y = 510;
+				textoffblue.textBaseline = "alphabetic";
+
 				var tomato1 = new zim.Circle(20, "tomato");
 				stage.addChild(tomato1);
 				tomato1.x = 575;
 				tomato1.y = 250;
-				// tomato1.cursor = "pointer";
+				// stage.setChildIndex(tomato1,stage.numChildren+10);
 
-				var tomato2 = new zim.Circle(20, "tomato");
+
+				var tomato2 = new zim.Circle(20, "blue");
 				stage.addChild(tomato2);
 				tomato2.x = 575;
-				tomato2.y = 250;
-				// tomato2.cursor = "pointer";
+				tomato2.y = 230;
+
+				var tomato3 = new zim.Circle(20, "blue");
+				stage.addChild(tomato3);
+				tomato3.x = 575;
+				tomato3.y = 230;
+
 
 
 				function done() {
@@ -120,6 +274,7 @@
 					tomato.cursor = "pointer";
 					tomato1.cursor = "pointer";
 					tomato2.cursor = "pointer";
+					tomato3.cursor = "pointer";
 					// myCircle.alpha = 0;
 					stage.update();
 				}
@@ -127,71 +282,98 @@
 
 				tomato.on("mouseover", function() {
 					createjs.Tween.get(tomato)
-					.to({y:500, x:400}, 1500, createjs.Ease.bounceOut)
+					.to({y:700, x:60}, 900, createjs.Ease.bounceOut)
 					.call(done);
+					stage.addChild(textonorange);
 					stage.update();
 				});
 
 				tomato1.on("mouseover", function() {
 					createjs.Tween.get(tomato1)
-					.to({y:100, x:500}, 500, createjs.Ease.bounceOut)
+					.to({y:650, x:60}, 1000, createjs.Ease.bounceOut)
 					.call(done);
+					stage.addChild(textofforange);
 					stage.update();
+
 				});
 
+				tomato2.on("mouseover", function(){
+					createjs.Tween.get(tomato2)
+					.to({y:550, x:60}, 1000, createjs.Ease.bounceOut)
+					.call(done);
+					stage.addChild(textonblue);
+					stage.update();
+
+				});
+
+				tomato3.on("mouseover", function(){
+					createjs.Tween.get(tomato3)
+					.to({y:500, x:60}, 1000, createjs.Ease.bounceOut)
+					.call(done);
+					stage.addChild(textoffblue);
+					stage.update();
+
+				});
 
 			var end = null;
 
-				tomato.on("click", function tomatoclick() {
-					stage.addChild(newpic);
-					backing3.visible = false;
-					stage.addChild(backing3);
-					var index = 0;
 
+					var pics = [fishing, kitchenjord, bowlcut, hose, ahh, suitme, mechristmas];
+					var pics2 = [mefilm, cousin, garbage, medan, mecali, mehat, family];
+					var currentPicture = 0;
+					var interval;
 
+					tomato.on("click", function(){
+						stage.addChild(pics[currentPicture]);
+						interval = setInterval(imageCarouselChanger, 600);
+					});
 
-					var interval = setInterval(function() {
-              if (newpic.visible) {
-								newpic.visible = false;
-								backing3.visible = true;
-							} else {
-								newpic.visible = true;
-								backing3.visible = false;
-							}
-							stage.update();
-					}, 300);
+					function imageCarouselChanger(){
+						var previousPicture = currentPicture;
+						currentPicture = currentPicture + 1;
+						if (currentPicture > (pics.length - 1)) {
+							currentPicture = 0;
+						}
+						stage.addChild(pics[currentPicture]);
+						if (previousPicture >=0) {
+							stage.removeChild(pics[previousPicture]);
+						}
+
+					}
+
 
 					tomato1.on("click", function() {
 						clearInterval(interval);
-								stage.removeChild(newpic);
-								stage.removeChild(backing3);
+								stage.removeChild(pics[currentPicture]);
 
 					});
 
+					tomato2.on("click", function(){
+						stage.addChild(pics2[currentPicture]);
+						interval = setInterval(imageCarouselChanger2, 600);
+					});
 
+					function imageCarouselChanger2(){
+						var previousPicture = currentPicture;
+						currentPicture = currentPicture + 1;
+						if (currentPicture > (pics2.length - 1)) {
+							currentPicture = 0;
+						}
+						stage.addChild(pics2[currentPicture]);
+						if (previousPicture >=0) {
+							stage.removeChild(pics2[previousPicture]);
+						}
 
+					}
 
+					tomato3.on("click", function() {
+						clearInterval(interval);
+								stage.removeChild(pics2[currentPicture]);
 
-					// function makePane() {
-					// 		var pane = new createjs.Container();
-					// 		var backing = new createjs.Shape();
-					// 		// make a big backing that closes the pane when clicked
-					// 		// could also provide a close button
-					// 		var g = backing.graphics;
-					// 		g.beginFill("black");
-					// 		g.drawRect(-5000,-5000,10000,10000);
-					// 		backing.alpha = .2; // might want to pass as a parameter
-					// 		backing.on("click", tomato1) {
-					// 			pane.dispatchEvent("close");
-					// 		});
-					// 		pane.addChild(backing);
-					//
-					// 	}
+					});
 
-
-					// stage.removeChild(newpic);
 					stage.update();
-				});
+
 
 
 
@@ -284,38 +466,6 @@
 	</div>
 	<script>
 
-	  // var Image = new Array("images/Rooney-Mara-026.jpg","images/felicity.jpg", "images/Emma-Watson-Glamour-UK.jpg","halfnelsonalltakes.mp4","images/slate.mp4");
-		//
-	  // var interval = null;
-		//
-		//
-		// var Image_Number = -1;
-		// var Image_length = Image.length - 1;
-		//
-		// function changeImage(num) {
-		// 	Image_Number = Image_Number + num;
-		//
-		// 	if (Image_Number > Image_length) {
-		// 		// Image_Number = 0;
-	  //     clearInterval( interval );
-	  //     Image_Number = -1;
-		// 	}
-		//
-		// 	if (Image_Number < 0) {
-		// 		Image_Number = Image_Length;
-		//
-		// 	}
-		//
-		// 	document.slideshow.src = Image[Image_Number];
-	  //   console.log("changeImage");
-		// 	return false;
-		//
-		// }
-		//
-		// function auto() {
-		// 	interval = setInterval ("changeImage(1)", 200);
-		//
-		// }
 
 	</script>	<!-- canvas with id="myCanvas" is made by zim Frame -->
 </body>
